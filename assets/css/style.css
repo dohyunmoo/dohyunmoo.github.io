@@ -1,5 +1,23 @@
 body {
     background-color: #36454f;
     color: #f0f8ff;
+}
 
+.hide {
+    opacity: 0.2;
+    transition: opacity .5s ease-in-out;
+}
+
+#main-button {
+    width: 45px;
+    height: 45px;
+}
+
+#main-button:hover {
+    cursor: pointer;
+}
+
+#feeb {
+    max-height: 100%;
+    max-width: 100%;
 }
