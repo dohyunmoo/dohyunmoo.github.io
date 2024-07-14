@@ -21,3 +21,31 @@ body {
     max-height: 100%;
     max-width: 100%;
 }
+
+.header-titles {
+    padding: 10px 0 25px 0;
+}
+
+.timeline-dot {
+    background-color: #f0f8ff;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    right: -15%;
+    top: 25%;
+}
+
+.left-card {
+    left: 0;
+    max-width: 40%;
+}
+
+.right-card {
+    left: 50%;
+    max-width: 40%;
+}
+
+.right-card .timeline-dot{
+    left: -15%;
+}
