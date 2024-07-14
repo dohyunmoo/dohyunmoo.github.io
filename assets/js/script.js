@@ -35,3 +35,12 @@ mainButton.addEventListener("click", () => {
         mainButton.dataset.evo = "feebas";
     }
 });
+
+const listItems = document.querySelectorAll("li");
+const emoji = '🗿';
+
+listItems.forEach(item => {
+    const emojiSpan = document.createElement("span");
+    emojiSpan.textContent = emoji;
+    item.prepend(emojiSpan);
+});

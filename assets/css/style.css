@@ -34,18 +34,33 @@ body {
     position: absolute;
     right: -15%;
     top: 25%;
+    display: none;
 }
 
 .left-card {
     left: 0;
-    max-width: 40%;
+    max-width: 70%;
 }
 
 .right-card {
-    left: 50%;
-    max-width: 40%;
+    left: 30%;
+    max-width: 70%;
 }
 
 .right-card .timeline-dot{
     left: -15%;
+}
+
+.left-card .card-image {
+    width: 100px;
+    height: 50px;
+}
+
+.right-card .card-image {
+    width: 100px;
+    height: 80px;
+}
+
+li {
+    margin-bottom: 8px;
 }
