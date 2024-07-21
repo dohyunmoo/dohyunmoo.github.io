@@ -173,10 +173,21 @@ li {
     .project-container {
         display: none;
     }
+
+    #navigation {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1000px) {
     .project-card {
         display: none;
     }
+}
+
+footer {
+    margin-left: 25px;
+    opacity: .25;
+    position: fixed;
+    top: 96%;
 }
