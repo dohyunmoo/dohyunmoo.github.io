@@ -36,7 +36,7 @@ listItems.forEach(item => {
     item.prepend(emojiSpan);
 });
 
-const observer = new IntersectionObserver(entries => {
+const animateObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add("animate");
@@ -47,4 +47,18 @@ const observer = new IntersectionObserver(entries => {
 });
   
 const expCards = document.querySelectorAll(".exp-card");
-expCards.forEach(card => observer.observe(card));
+expCards.forEach(card => animateObserver.observe(card));
+
+const showObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        } else {
+            entry.target.classList.remove("show");
+        }
+    })
+})
+
+
+const hiddenLogos = document.querySelectorAll(".hidden");
+hiddenLogos.forEach(logo => showObserver.observe(logo));
