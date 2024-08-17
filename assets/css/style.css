@@ -183,15 +183,15 @@ li {
 }
 
 .logo:nth-child(2), .logo:nth-child(6) {
-    transition-delay: 100ms;
+    transition-delay: 75ms;
 }
 
 .logo:nth-child(3), .logo:nth-child(7) {
-    transition-delay: 200ms;
+    transition-delay: 150ms;
 }
 
 .logo:nth-child(4), .logo:nth-child(8) {
-    transition-delay: 300ms;
+    transition-delay: 225ms;
 }
 
 @media screen and (max-width: 1000px) {
